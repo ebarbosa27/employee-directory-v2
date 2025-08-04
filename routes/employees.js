@@ -44,7 +44,7 @@ router.route("/").post((req, res) => {
     name: name,
   });
 
-  res.json(employees);
+  res.status(201).json(employees);
 });
 
 export default router;
